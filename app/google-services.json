@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "325816483019",
+    "firebase_url": "https://cobafirebase-ccd6c-default-rtdb.firebaseio.com",
+    "project_id": "cobafirebase-ccd6c",
+    "storage_bucket": "cobafirebase-ccd6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325816483019:android:dce99e75e4bd60ca3e6f4e",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325816483019-hskr2p2fl2cshdpcu3anjfk9qk462644.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm_mvZKfLcYZwhQNYnm_yHpYxVEFvqnbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325816483019-hskr2p2fl2cshdpcu3anjfk9qk462644.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

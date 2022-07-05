@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/peach_background"
+        tools:context=".introFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <RelativeLayout
+                android:layout_width="400dp"
+                android:layout_height="1600dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_withshadow">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="25dp"
+                        android:paddingBottom="5dp"
+                        android:text="Aplikasi Gabah"
+                        android:textColor="@color/independece"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.523" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="950dp"
+                    android:layout_below="@id/layout1"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/background_withshadow">
+
+                    <Button
+                        android:id="@+id/buttonStopManual"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="850dp"
+                        android:background="@drawable/background_button"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:text="Stop"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/buttonMulaiManual"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="850dp"
+                        android:layout_marginEnd="160dp"
+                        android:background="@drawable/background_button"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:text="Mulai"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/manualControl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="890dp"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:text="Manual Control"
+                        android:textColor="@color/independece"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!--                    <HorizontalScrollView-->
+                    <!--                        android:id="@+id/horizontalScrollView3"-->
+                    <!--                        android:layout_width="300dp"-->
+                    <!--                        android:layout_height="150dp"-->
+                    <!--                        android:layout_marginLeft="20dp"-->
+                    <!--                        android:layout_marginRight="20dp"-->
+                    <!--                        android:layout_marginBottom="540dp"-->
+                    <!--                        android:background="@drawable/background_horizontal"-->
+                    <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                        app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                        tools:ignore="SpeakableTextPresentCheck">-->
+
+                    <!--                        <RelativeLayout-->
+                    <!--                            android:layout_width="560dp"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:orientation="horizontal"-->
+                    <!--                            android:padding="10dp">-->
+
+                    <!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+                    <!--                                android:id="@+id/layoutHorizontal1"-->
+                    <!--                                android:layout_width="140dp"-->
+                    <!--                                android:layout_height="200dp">-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:id="@+id/imageView7"-->
+                    <!--                                    android:layout_width="80dp"-->
+                    <!--                                    android:layout_height="80dp"-->
+                    <!--                                    android:layout_marginEnd="30dp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintHorizontal_bias="0.5"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                                    app:srcCompat="@drawable/temp_2" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView6"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginTop="100dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="Tampilan Suhu"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="@+id/imageView7"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="@+id/imageView7"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView11"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginStart="90dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="18°C"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    android:textSize="21sp"-->
+                    <!--                                    app:layout_constraintBottom_toTopOf="@+id/textView6"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="@+id/imageView7" />-->
+                    <!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                    <!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+                    <!--                                android:id="@+id/layoutHorizontal2"-->
+                    <!--                                android:layout_width="140dp"-->
+                    <!--                                android:layout_height="200dp"-->
+                    <!--                                android:layout_toRightOf="@+id/layoutHorizontal1">-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:id="@+id/imageView9"-->
+                    <!--                                    android:layout_width="80dp"-->
+                    <!--                                    android:layout_height="80dp"-->
+                    <!--                                    android:layout_marginEnd="40dp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintHorizontal_bias="0.5"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                                    app:srcCompat="@drawable/humidity_2" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView10"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginTop="100dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="Kelembapan"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="@+id/imageView9"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="@+id/imageView9"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView12"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginStart="90dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="45%"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    android:textSize="21sp"-->
+                    <!--                                    app:layout_constraintBottom_toTopOf="@+id/textView10"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="@+id/imageView9" />-->
+
+                    <!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                    <!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+                    <!--                                android:id="@+id/layoutHorizontal3"-->
+                    <!--                                android:layout_width="140dp"-->
+                    <!--                                android:layout_height="200dp"-->
+                    <!--                                android:layout_toRightOf="@id/layoutHorizontal2">-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:id="@+id/imageView10"-->
+                    <!--                                    android:layout_width="70dp"-->
+                    <!--                                    android:layout_height="70dp"-->
+                    <!--                                    android:layout_marginEnd="40dp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintHorizontal_bias="0.5"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                                    app:srcCompat="@drawable/weight_kg" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView16"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginTop="100dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="Sebelum"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="@+id/imageView10"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="@+id/imageView10"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView18"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginStart="90dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="0kg"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    android:textSize="21sp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="@+id/imageView10"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="@+id/imageView10" />-->
+                    <!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                    <!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+                    <!--                                android:id="@+id/layoutHorizontal4"-->
+                    <!--                                android:layout_width="140dp"-->
+                    <!--                                android:layout_height="200dp"-->
+                    <!--                                android:layout_toRightOf="@id/layoutHorizontal3">-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:id="@+id/imageView11"-->
+                    <!--                                    android:layout_width="70dp"-->
+                    <!--                                    android:layout_height="70dp"-->
+                    <!--                                    android:layout_marginEnd="40dp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintHorizontal_bias="0.5"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                                    app:srcCompat="@drawable/weight_kg" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView17"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginTop="100dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="Sesudah"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="@+id/imageView11"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="@+id/imageView11"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView19"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginStart="90dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="0kg"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    android:textSize="21sp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="@+id/imageView11"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="@+id/imageView11" />-->
+                    <!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+                    <!--                        </RelativeLayout>-->
+                    <!--                    </HorizontalScrollView>-->
+
+                    <Button
+                        android:id="@+id/tombolPengaduk"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="260dp"
+                        android:layout_marginEnd="200dp"
+                        android:layout_marginBottom="210dp"
+                        android:background="@drawable/background_button"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="2dp"
+                        android:text="Pengaduk"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/tombolPengering"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="280dp"
+                        android:layout_marginBottom="100dp"
+                        android:background="@drawable/background_button"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="2dp"
+                        android:text="Heater"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/tombolPengaduk"
+                        app:layout_constraintStart_toStartOf="@+id/tombolPengaduk"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/tombolServo"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="410dp"
+                        android:layout_marginBottom="100dp"
+                        android:background="@drawable/background_button"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="2dp"
+                        android:text="Servo"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/tombolPengaduk"
+                        app:layout_constraintStart_toStartOf="@+id/tombolPengaduk"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/tombolBlower"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="440dp"
+                        android:background="@drawable/background_button"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="2dp"
+                        android:text="Blower 1"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/tombolPengaduk"
+                        app:layout_constraintStart_toStartOf="@+id/tombolPengaduk"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/tombolBlower1"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="570dp"
+                        android:layout_marginEnd="200dp"
+                        android:background="@drawable/background_button"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="2sp"
+                        android:text="BLower 2"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/tombolPenggiling"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="700dp"
+                        android:background="@drawable/background_button"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="2dp"
+                        android:text="Penggiling"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/tombolPengaduk"
+                        app:layout_constraintStart_toStartOf="@+id/tombolPengaduk"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/textViewPengaduk"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150dp"
+                        android:background="@drawable/peach_background"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="10sp"
+                        android:text="Pengaduk: OFF"
+                        android:textAlignment="center"
+                        android:textColor="@color/independece"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tombolPengaduk"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tombolPengaduk"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPengering"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/peach_background"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="10sp"
+                        android:text="Pengering: OFF"
+                        android:textAlignment="center"
+                        android:textColor="@color/independece"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tombolPengering"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewPengaduk"
+                        app:layout_constraintStart_toStartOf="@+id/textViewPengaduk"
+                        app:layout_constraintTop_toTopOf="@+id/tombolPengering" />
+
+                    <TextView
+                        android:id="@+id/textViewServo"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/peach_background"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="10sp"
+                        android:text="Servo: OFF"
+                        android:textAlignment="center"
+                        android:textColor="@color/independece"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tombolServo"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewPengaduk"
+                        app:layout_constraintStart_toStartOf="@+id/textViewPengaduk"
+                        app:layout_constraintTop_toTopOf="@+id/tombolServo" />
+
+                    <TextView
+                        android:id="@+id/textViewBlower"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/peach_background"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="10sp"
+                        android:text="Blower 1: OFF"
+                        android:textAlignment="center"
+                        android:textColor="@color/independece"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tombolBlower"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewPengaduk"
+                        app:layout_constraintStart_toStartOf="@+id/textViewPengaduk"
+                        app:layout_constraintTop_toTopOf="@+id/tombolBlower" />
+
+                    <TextView
+                        android:id="@+id/textViewPenggiling"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/peach_background"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="10sp"
+                        android:text="Penggiling: OFF"
+                        android:textAlignment="center"
+                        android:textColor="@color/independece"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tombolPenggiling"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewPengaduk"
+                        app:layout_constraintStart_toStartOf="@+id/textViewPengaduk"
+                        app:layout_constraintTop_toTopOf="@+id/tombolPenggiling" />
+
+                    <TextView
+                        android:id="@+id/textViewModeManual"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="110dp"
+                        android:background="@drawable/background_horizontal"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="12dp"
+                        android:text="Mode Manual: Non-Aktif"
+                        android:textAlignment="center"
+                        android:textColor="@color/slateGray"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewBlower1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/peach_background"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="10sp"
+                        android:text="Blower 2: OFF"
+                        android:textAlignment="center"
+                        android:textColor="@color/independece"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tombolBlower1"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewBlower"
+                        app:layout_constraintStart_toStartOf="@+id/textViewBlower"
+                        app:layout_constraintTop_toTopOf="@+id/tombolBlower1" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="350dp"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="550dp"
+                        android:background="@drawable/background_horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.6">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout"
+                            android:layout_width="140dp"
+                            android:layout_height="150dp"
+                            android:layout_marginEnd="175dp"
+                            android:layout_marginBottom="150dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView7"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="30dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/temp_2" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="100dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="Tampilan Suhu"
+                                android:textColor="@color/slateGray"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                                app:layout_constraintStart_toStartOf="@+id/imageView7"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="90dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="18°C"
+                                android:textColor="@color/slateGray"
+                                android:textSize="21sp"
+                                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="140dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="175dp"
+                            android:layout_marginBottom="150dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView9"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="40dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/humidity_2" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="100dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="Kelembapan"
+                                android:textColor="@color/slateGray"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                                app:layout_constraintStart_toStartOf="@+id/imageView9"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="90dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="45%"
+                                android:textColor="@color/slateGray"
+                                android:textSize="21sp"
+                                app:layout_constraintBottom_toTopOf="@+id/textView10"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout2"
+                            android:layout_width="140dp"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginEnd="175dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView10"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginEnd="40dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/weight_kg" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="100dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="Sebelum"
+                                android:textColor="@color/slateGray"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView10"
+                                app:layout_constraintStart_toStartOf="@+id/imageView10"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="90dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="0kg"
+                                android:textColor="@color/slateGray"
+                                android:textSize="21sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="140dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="175dp"
+                            android:layout_marginTop="150dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginEnd="40dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/weight_kg" />
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="100dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="Sesudah"
+                                android:textColor="@color/slateGray"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView11"
+                                app:layout_constraintStart_toStartOf="@+id/imageView11"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="90dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="0kg"
+                                android:textColor="@color/slateGray"
+                                android:textSize="21sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="400dp"
+                    android:layout_height="550dp"
+                    android:layout_below="@id/layout2"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_withshadow">
+
+                    <TextView
+                        android:id="@+id/textViewModeOtomatis"
+                        android:layout_width="280dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="260dp"
+                        android:background="@drawable/background_horizontal"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:padding="12dp"
+                        android:text="Mode Otomatis: Non-Aktif"
+                        android:textAlignment="center"
+                        android:textColor="@color/slateGray"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/buttonOtomatisStop"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="420dp"
+                        android:background="@drawable/background_button"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:text="Stop"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!--                    <HorizontalScrollView-->
+                    <!--                        android:id="@+id/horizontalScrollView2"-->
+                    <!--                        android:layout_width="300dp"-->
+                    <!--                        android:layout_height="150dp"-->
+                    <!--                        android:layout_marginLeft="20dp"-->
+                    <!--                        android:layout_marginRight="20dp"-->
+                    <!--                        android:layout_marginBottom="130dp"-->
+                    <!--                        android:background="@drawable/background_horizontal"-->
+                    <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                        app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                        tools:ignore="SpeakableTextPresentCheck">-->
+
+                    <!--                        <RelativeLayout-->
+                    <!--                            android:layout_width="560dp"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:orientation="horizontal"-->
+                    <!--                            android:padding="10dp">-->
+
+                    <!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+                    <!--                                android:id="@+id/layoutHorizontal5"-->
+                    <!--                                android:layout_width="140dp"-->
+                    <!--                                android:layout_height="200dp">-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:id="@+id/imageView12"-->
+                    <!--                                    android:layout_width="80dp"-->
+                    <!--                                    android:layout_height="80dp"-->
+                    <!--                                    android:layout_marginEnd="30dp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintHorizontal_bias="0.5"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                                    app:srcCompat="@drawable/temp_2" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView20"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginTop="100dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="Tampilan Suhu"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="@+id/imageView12"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="@+id/imageView12"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView21"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginStart="90dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="18°C"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    android:textSize="21sp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="@+id/imageView12"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="@+id/imageView12" />-->
+                    <!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                    <!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+                    <!--                                android:id="@+id/layoutHorizontal6"-->
+                    <!--                                android:layout_width="140dp"-->
+                    <!--                                android:layout_height="200dp"-->
+                    <!--                                android:layout_toRightOf="@+id/layoutHorizontal5">-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:id="@+id/imageView14"-->
+                    <!--                                    android:layout_width="80dp"-->
+                    <!--                                    android:layout_height="80dp"-->
+                    <!--                                    android:layout_marginEnd="40dp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintHorizontal_bias="0.5"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                                    app:srcCompat="@drawable/humidity_2" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView22"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginTop="100dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="Kelembapan"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="@+id/imageView14"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="@+id/imageView14"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView23"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginStart="90dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="45%"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    android:textSize="21sp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="@+id/imageView14"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="@+id/imageView14" />-->
+
+                    <!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                    <!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+                    <!--                                android:id="@+id/layoutHorizontal7"-->
+                    <!--                                android:layout_width="140dp"-->
+                    <!--                                android:layout_height="200dp"-->
+                    <!--                                android:layout_toRightOf="@id/layoutHorizontal6">-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:id="@+id/imageView15"-->
+                    <!--                                    android:layout_width="70dp"-->
+                    <!--                                    android:layout_height="70dp"-->
+                    <!--                                    android:layout_marginEnd="40dp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintHorizontal_bias="0.5"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                                    app:srcCompat="@drawable/weight_kg" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView24"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginTop="100dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="Awal"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="@+id/imageView15"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="@+id/imageView15"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView25"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginStart="90dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="0kg"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    android:textSize="21sp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="@+id/imageView15"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="@+id/imageView15" />-->
+                    <!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                    <!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+                    <!--                                android:id="@+id/layoutHorizontal8"-->
+                    <!--                                android:layout_width="140dp"-->
+                    <!--                                android:layout_height="200dp"-->
+                    <!--                                android:layout_toRightOf="@id/layoutHorizontal7">-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:id="@+id/imageView16"-->
+                    <!--                                    android:layout_width="70dp"-->
+                    <!--                                    android:layout_height="70dp"-->
+                    <!--                                    android:layout_marginEnd="40dp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintHorizontal_bias="0.5"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent"-->
+                    <!--                                    app:srcCompat="@drawable/weight_kg" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView26"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginTop="100dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="Akhir"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="@+id/imageView16"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="@+id/imageView16"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:id="@+id/textView27"-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="wrap_content"-->
+                    <!--                                    android:layout_marginStart="90dp"-->
+                    <!--                                    android:fontFamily="@font/proxima_nova_font_bold"-->
+                    <!--                                    android:text="0kg"-->
+                    <!--                                    android:textColor="@color/slateGray"-->
+                    <!--                                    android:textSize="21sp"-->
+                    <!--                                    app:layout_constraintBottom_toBottomOf="@+id/imageView16"-->
+                    <!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                                    app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                                    app:layout_constraintTop_toTopOf="@+id/imageView16" />-->
+                    <!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+                    <!--                        </RelativeLayout>-->
+                    <!--                    </HorizontalScrollView>-->
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="500dp"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:text="Otomatis"
+                        android:textColor="@color/independece"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/buttonOtomatisMulai"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="420dp"
+                        android:layout_marginEnd="160dp"
+                        android:background="@drawable/background_button"
+                        android:fontFamily="@font/proxima_nova_font_bold"
+                        android:text="Mulai"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="350dp"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="150dp"
+                        android:background="@drawable/background_horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout3"
+                            android:layout_width="140dp"
+                            android:layout_height="150dp"
+                            android:layout_marginEnd="175dp"
+                            android:layout_marginBottom="150dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView12"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="30dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/temp_2" />
+
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="100dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="Tampilan Suhu"
+                                android:textColor="@color/slateGray"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView12"
+                                app:layout_constraintStart_toStartOf="@+id/imageView12"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="90dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="18°C"
+                                android:textColor="@color/slateGray"
+                                android:textSize="21sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout5"
+                            android:layout_width="140dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="175dp"
+                            android:layout_marginBottom="150dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="40dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/humidity_2" />
+
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="100dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="Kelembapan"
+                                android:textColor="@color/slateGray"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                                app:layout_constraintStart_toStartOf="@+id/imageView14"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="90dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="45%"
+                                android:textColor="@color/slateGray"
+                                android:textSize="21sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout4"
+                            android:layout_width="140dp"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginEnd="175dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView15"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginEnd="40dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/weight_kg" />
+
+                            <TextView
+                                android:id="@+id/textView24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="100dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="Awal"
+                                android:textColor="@color/slateGray"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                                app:layout_constraintStart_toStartOf="@+id/imageView15"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="90dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="0kg"
+                                android:textColor="@color/slateGray"
+                                android:textSize="21sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="140dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="175dp"
+                            android:layout_marginTop="150dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginEnd="40dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/weight_kg" />
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="100dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="Akhir"
+                                android:textColor="@color/slateGray"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView16"
+                                app:layout_constraintStart_toStartOf="@+id/imageView16"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="90dp"
+                                android:fontFamily="@font/proxima_nova_font_bold"
+                                android:text="0kg"
+                                android:textColor="@color/slateGray"
+                                android:textSize="21sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Aplikasi Gabah</string>
+    <string name="login">Masukan Username</string>
+    <string name="pwd">Masukan Password</string>
+    <string name="imageDescription">Deskripsi</string>
+    <!-- TODO: Intro Fragment -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="buttonName">Login</string>
+    <!-- TODO: All Fragment -->
+    <string name="backButton">Kembali</string>
+    <!-- TODO: Home Fragment -->
+    <string name="monitoring">Monitoring</string>
+    <string name="control">Control</string>
+    <string name="welcome">Selamat Datang</string>
+    <!-- TODO: Control Fragment -->
+    <string name="manual">Manual</string>
+    <string name="otomatis">Otomatis</string>
+    <string name="controlTextView">Control</string>
+    <!-- TODO: Monitoring Fragment -->
+    <string name="suhuNol">Suhu : 00</string>
+    <!-- TODO: Monitoring Fragment -->
+    <string name="switchPengaduk">Pengaduk</string>
+    <string name="switchPengering">Pengering</string>
+    <string name="switchHeater">Heater</string>
+    <string name="switchServo">Servo</string>
+    <string name="switchBlower">Blower</string>
+    <string name="switchPenggiling">Penggiling</string>
+    <string name="switchOtomatis">OTOMATIS</string>
+    <string name="resetState">Reset</string>
+    <!-- TODO: Monitoring Fragment -->
+    <string name="stateNol">-</string>
+    <string name="stateOtomatis">Otomatis</string>
+
+
+</resources>
